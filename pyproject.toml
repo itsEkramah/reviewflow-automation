@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reviewflow-automation"
+version = "1.0.0"
+requires-python = ">=3.11"
+description = "Portfolio demonstration by Muhammad Ekramah"
+dependencies = ["fastapi==0.141.1", "pydantic==2.13.4", "uvicorn==0.52.1", "httpx==0.28.1"]
+
+[tool.setuptools.packages.find]
+include = ["reviewflow*"]
+
+[tool.setuptools.package-data]
+reviewflow = ["static/*"]
